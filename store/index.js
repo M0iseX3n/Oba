@@ -10,14 +10,14 @@ const store = createStore({
 
       productos : [
         {
-            imagen : 'https://m.media-amazon.com/images/I/71eX-4Pfk8L._AC_SX679_.jpg',
+            imagen : 'https://m.media-amazon.com/images/I/71eX-4Pfk8L.AC_SX679.jpg',
             precio :  290,
             titulo : 'Celeron Quad Core Jasper Lake N5095, pantalla FHD IPS',
             descripcion : 'Laptop',
             id : 1
         },
         {
-          imagen : 'https://m.media-amazon.com/images/I/81-SFliGJmL._AC_SL1500_.jpg',
+          imagen : 'https://m.media-amazon.com/images/I/81-SFliGJmL.AC_SL1500.jpg',
           precio : 3000,
           titulo : 'HP I9',
           descripcion : 'Laptop Hp',
@@ -101,7 +101,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   return {
     provide: {
       store: store
-    }
-  }
+    }
+  }
 })
-
