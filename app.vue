@@ -5,8 +5,8 @@
     
     <!-- Contenido principal -->
     <main class="main-content">
-      <center><p>Bienvenidos al refuerzo de Matemáticas y Pensamiento Lógico.</p></center>
-      <router-link to="/contenido">
+    <p>Bienvenidos al refuerzo de Matemáticas y Pensamiento Lógico.</p>
+      <router-link to="/index.vue">
         <button class="main-button">Entrar</button>
       </router-link>
     </main>

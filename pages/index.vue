@@ -1,30 +1,45 @@
 <template>
     <div>
-      <h2>Página de Inicio</h2>
-      <p>Aquí iría el contenido de la página de inicio.</p>
-      <p>Contador : {{ this.$store.state.count }} </p>
-      <NuxtLink 
-        to="/dashboard/">
-        <v-btn append-icon="$vuetify" variant="outlined">
-          Continuar
-        </v-btn>
-      </NuxtLink>
-      
+      <!-- Encabezado -->
+      <Header />
+  
+      <!-- Contenido principal -->
+      <main class="main-content">
+        <p>Bienvenidos al refuerzo de Matemáticas y Pensamiento Lógico.</p>
+        <NuxtLink to="/contenido">
+          <button class="main-button">Entrar</button>
+        </NuxtLink>
+      </main>
+  
+      <!-- Pie de página -->
+      <Footer />
     </div>
   </template>
   
-  <script>
-export default {
-  computed: {
-    counter() {
-      return this.$store.state.count
-    }
-  },
-  methods: {
-    increment() {
-      this.$store.commit('increment')
-    }
+  <script setup>
+  import Header from "@/components/Header.vue";
+  import Footer from "@/components/Footer.vue";
+  </script>
+  
+  <style>
+  .main-content {
+    text-align: center;
+    padding: 20px;
   }
-}
-
-</script>
+  
+  .main-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-button:hover {
+    background-color: #0056b3;
+  }
+  </style>
+  
