@@ -2,7 +2,7 @@
     <footer class="footer">
       <div class="footer-content">
         <img src="https://www.pikpng.com/pngl/b/430-4309318_university-of-crdoba-escudo-universidad-de-cordoba-clipart.png" alt="70px" class="footer-logo" />
-        <p>Universidad Cristóbal Colón - Matemáticas - Docente: Marina Bedoya</p>
+        <p>Universidad De Córdoba - Matemáticas - Docente: Marina Bedoya</p>
       </div>
     </footer>
   </template>
